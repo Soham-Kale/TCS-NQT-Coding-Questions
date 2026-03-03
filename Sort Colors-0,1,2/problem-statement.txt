@@ -1,0 +1,29 @@
+Coding Previous Year Questions (Warehouse Problem)
+
+In the automated warehouse of TCS Global, packages are identified by a string of 
+color codes. Each code represents a specific priority level:
+
+0: High Priority (Red)
+1: Medium Priority (White)
+2: Low Priority (Blue)
+
+The system receives a single string containing these codes separated by commas. 
+Your task is to reorder these packages so that all High Priority (0) items come 
+first, followed by Medium Priority (1), and finally Low Priority (2).
+
+
+Note: You must perform the sort in-place with O(1) extra space and O(n) time complexity. 
+Using built-in sorting functions is strictly prohibited for this exercise.
+
+Input Format: A single line containing a string S. The string S consists of integers (0, 1, 2) separated by commas.
+
+Output Format: A single line containing the sorted integers, separated by commas.
+
+
+********************** Examples *********************
+
+Input: 2,0,2,1,1,0
+Output: 0,0,1,1,2,2
+
+Input: 1,2,0
+Output: 0,1,2
