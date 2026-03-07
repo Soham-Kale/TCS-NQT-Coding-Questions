@@ -1,3 +1,5 @@
+/// Using Dynamic Array (vector in C++)
+
 #include<bits/stdc++.h>
 using namespace std;
 
