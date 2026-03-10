@@ -1,0 +1,15 @@
+Problem 3: Uniform Rows and Columns
+
+You are given a string whose length is a perfect square. 
+Convert the string into an N x N grid by filling it row-wise. 
+Count the number of rows and columns in which all characters are identical.
+
+Example 1:
+Input: aaaabbbcc
+Output: 1
+
+Example 2:
+Input: ccee
+Output: 2
+
+These problems are designed to test logical thinking, pattern recognition, and efficient traversal of strings and grids.
