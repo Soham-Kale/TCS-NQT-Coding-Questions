@@ -22,3 +22,35 @@ Final amount after discount, printed to 2 decimal places (e.g., "760.00")
 Formula:
 
 Final Amount = Amount − (Amount × Discount Rate)
+
+
+Q1 — Test Cases — Dry Run
+Test Case 1
+
+Input: 800
+
+Slab: < 1000 → 5%
+Discount: 5% of 800 = 40
+
+Final Amount:
+800 − 40 = 760.00
+
+Test Case 2
+
+Input: 2000
+
+Slab: 1000–5000 → 10%
+Discount: 10% of 2000 = 200
+
+Final Amount:
+2000 − 200 = 1800.00
+
+Test Case 3
+
+Input: 6000
+
+Slab: ≥ 5000 → 15%
+Discount: 15% of 6000 = 900
+
+Final Amount:
+6000 − 900 = 5100.00
