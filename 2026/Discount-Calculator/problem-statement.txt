@@ -1,0 +1,24 @@
+Q1 — Discount Calculator
+Problem:
+
+Given a purchase amount, apply a discount based on slabs and print the final payable 
+amount rounded to 2 decimal places.
+
+Discount Slabs:
+5% discount
+amount < 1000
+10% discount
+1000 ≤ amount < 5000
+15% discount
+amount ≥ 5000
+Input:
+
+Single integer — the purchase amount
+
+Output:
+
+Final amount after discount, printed to 2 decimal places (e.g., "760.00")
+
+Formula:
+
+Final Amount = Amount − (Amount × Discount Rate)
