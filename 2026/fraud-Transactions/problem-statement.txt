@@ -1,3 +1,90 @@
+Q2 — TRANSACTION MONITORING SYSTEM | Problem & Rules
+
+You are building a Transaction Monitoring System. Process N transactions. Each has 4 fields:
+sender receiver timestamp amount
+
+Check 2 rules in order for each transaction. Print exactly one output and terminate when a rule fires.
+
+Rule 1: Duplicate Transaction Check
+
+If any transaction has the SAME sender AND same receiver as any PREVIOUS transaction:
+→ Print: "Error: Duplicate Transaction" then terminate immediately.
+
+Rule 2: Fraud Detection Rule
+
+If the difference between timestamps of any two CONSECUTIVE transactions is > 60 seconds:
+→ Print: "Fraud Detected" then terminate immediately.
+
+Rule 3: All Transactions Valid
+
+If the entire loop completes without triggering Rule 1 or Rule 2:
+→ Print: "All Transactions Valid"
+
+
+
+Q2 — TEST CASES | 3 Sample Cases Explained
+TC 1 — All Transactions Valid
+
+Input:
+
+3
+A B 10 100
+C D 50 200
+E F 100 300
+
+Output:
+
+All Transactions Valid
+
+Why:
+No repeated (sender, receiver) pairs.
+Time diffs: 50 - 10 = 40s ✔, 100 - 50 = 50s ✔
+Both ≤ 60. Loop completes normally.
+
+TC 2 — Duplicate Transaction
+
+Input:
+
+3
+A B 10 100
+C D 50 200
+A B 70 300
+
+Output:
+
+Error: Duplicate Transaction
+
+Why:
+Transaction 3: sender = A, receiver = B → already seen in Transaction 1.
+Rule 1 fires immediately. Terminate.
+
+TC 3 — Fraud Detected
+
+Input:
+
+3
+A B 10 100
+C D 50 200
+E F 200 300
+
+Output:
+
+Fraud Detected
+
+Why:
+Time diffs:
+50 - 10 = 40s ✔
+200 - 50 = 150s ✘ (> 60)
+Rule 2 fires at Transaction 3. Terminate
+
+
+
+
+
+
+//////////////////////    OR       //////////////////
+
+
 Second question was fraud transactions. Each transaction had:
 
 \- sender (string, person name)
