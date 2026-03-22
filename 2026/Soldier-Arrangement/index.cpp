@@ -1,26 +1,28 @@
-Q2 — Soldier Arrangement
-Problem:
+#include <bits/stdc++.h>
+using namespace std;
 
-Arrange N soldiers in a line. Each soldier has a value from 1 to R.
+int main() {
+    int N, R, end;
+    cin >> N >> R >> end;
 
-Count all valid arrangements satisfying the three rules below.
+    vector<vector<int>> dp(N + 1, vector<int>(R + 1, 0));
 
-Rules:
-First soldier's value must be 1
-Last soldier's value must be 'end' (given)
-No two adjacent soldiers can have the SAME value
-Example:
+    dp[1][1] = 1;
 
-N = 4, R = 4, end = 3
+    for(int i = 2; i <= N; i++) {
+        int total = 0;
 
-Valid sequences (length 4, start = 1, end = 3, no adjacent equal):
+        // sum of previous row
+        for(int j = 1; j <= R; j++) {
+            total += dp[i - 1][j];
+        }
 
-1 2 4 3
-1 2 1 3
-1 3 1 3
-1 3 2 3
-1 3 4 3
-1 4 1 3
-1 4 2 3
+        for(int j = 1; j <= R; j++) {
+            dp[i][j] = total - dp[i - 1][j]; // remove same value case
+        }
+    }
 
-Answer = 7
+    cout << dp[N][end];
+
+    return 0;
+}
