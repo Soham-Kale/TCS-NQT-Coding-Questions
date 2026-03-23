@@ -1,0 +1,58 @@
+Q1 — Parking Fine Calculation
+Problem:
+
+A parking system calculates fines based on hours parked. Given integer hours, determine the correct fine.
+
+Fine Slabs:
+Short stay
+hours ≤ 2
+₹100
+
+Medium stay
+2 < hours ≤ 5
+₹50
+
+Long stay
+hours > 5
+₹20
+Input:
+
+Single integer — hours
+
+Output:
+
+Integer fine (100, 50, or 20)
+
+
+Test Case 1
+
+Input: hours = 2
+
+Condition: hours ≤ 2
+
+Boundary case — exactly 2 hrs hits first condition
+
+Fine Output:
+100
+
+Test Case 2
+
+Input: hours = 4
+
+Condition: 2 < hours ≤ 5
+
+4 > 2 and 4 ≤ 5 — falls in middle slab
+
+Fine Output:
+50
+
+Test Case 3
+
+Input: hours = 6
+
+Condition: hours > 5
+
+6 > 5 — falls in last else block
+
+Fine Output:
+20
