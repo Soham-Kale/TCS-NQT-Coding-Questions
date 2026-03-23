@@ -1,0 +1,62 @@
+Q2 — Maximum Sum ≤ Limit
+Problem:
+
+Given an array of integers and a limit maxSum, find the maximum possible sum of any 
+subset such that sum ≤ maxSum.
+
+Input:
+n — size of array
+arr[n] — integer array
+maxSum — the limit
+Output:
+
+Maximum sum ≤ maxSum from any subset of arr
+
+Approach:
+
+RECURSION — at every index, choose to INCLUDE or EXCLUDE the element.
+Explore all 2ⁿ subsets.
+
+The Two Choices at Each Step:
+    ✅ INCLUDE
+Add arr[index] to current sum
+Move to next index with updated sum
+    ❌ EXCLUDE
+Skip arr[index]
+Move to next index with same sum
+
+************************Test Cases**************************
+
+Q2 — Test Cases + Recursion Idea
+Test Case 1
+
+n = 4
+arr = [2, 3, 5, 7]
+maxSum = 10
+
+Subsets tried:
+
+{3,7} = 10 ✔
+{2,3,5} = 10 ✔
+{5,3} = 8
+{7} = 7
+
+Output = 10 (subset {3,7})
+
+Test Case 2
+
+n = 3
+arr = [4, 8, 6]
+maxSum = 9
+
+Subsets tried:
+
+{4} = 4
+{8} = 8 ✔
+{4,6} = 10 ✘ (> 9)
+{6} = 6
+
+Output = 8 (subset {8})
+
+Recursion Base Cases:
+currentSum > maxSum → return 0 (exceeded limit — invalid path)
