@@ -1,0 +1,10 @@
+Problem 1 — Minimum Array Rotations
+
+Given two arrays arr1 and arr2 of the same size, find the minimum number of 
+rotations (left or right) needed to transform arr1 into arr2.
+
+Example
+arr1 = {1, 2, 3, 4, 5}
+arr2 = {3, 4, 5, 1, 2}
+Output: 2 (Left Rotations)
+
