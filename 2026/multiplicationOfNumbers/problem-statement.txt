@@ -1,0 +1,16 @@
+Bonus Q3 — Multiplication of Numbers (CSV)
+
+TCS NQT 2026 | Memory Based
+
+Problem & Example
+
+Input: comma-separated integers
+Constraint: -10 ≤ num ≤ 10
+
+Rules
+Ignore zeros
+Multiply all non-zero numbers
+Example
+
+Input: 1,2,0,3,-2
+Output: 1×2×3×(-2) = -12
