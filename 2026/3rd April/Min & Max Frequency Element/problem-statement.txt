@@ -1,0 +1,17 @@
+**Question 1: Min & Max Frequency Element**
+
+**Problem:**
+Given an array (space-separated), find:
+
+* Element with minimum frequency
+* Element with maximum frequency
+
+---
+
+**Example**
+
+**Input:**
+1 2 2 3 3 3 4
+
+**Output:**
+1 3
