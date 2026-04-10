@@ -1,28 +1,32 @@
-/// Using Dynamic Array (vector in C++)
-
 #include<bits/stdc++.h>
 using namespace std;
 
+void reverseString(char name[], int n) {
+    int s = 0;
+    int e = n -1;
+    
+    while( s < e )  {
+        swap(name[s++], name[e--]);
+    }
+}
+
+int getLength(char name[]) {
+    int count = 0;
+    for(int i=0; i<name[i] != '\0'; i++) {
+        count++;
+    }
+    return count;
+}
+
 int main() {
-    int n;
-    cout << "Enter the size of the array: ";
-    cin >> n;
-
-    vector<int> list;
-
-    for(int i=0; i<n; i++) {
-        int x;
-        cin >> x;
-        list.push_back(x); 
-    }
-
-    // print array
-    for(int i=0; i<n; i++) {
-        cout << list[i] << " ";
-    }
-
-    // another way to print array using for each loop
-    for(int x: list) {
-        cout << x << " ";
-    }
+    char name[20];
+    cout << "Enter Your name: ";
+    cin >> name;
+    
+    int ans = getLength(name);
+    
+    reverseString(name, ans);
+    
+    cout << name;
+    return 0;
 }
