@@ -1,13 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void reverseString(char name[], int n) {
+bool checkPalindrome(char name[], int n) {
     int s = 0;
-    int e = n -1;
-    
-    while( s < e )  {
-        swap(name[s++], name[e--]);
+    int e = n-1;
+
+    while(s < e) {
+        if( tolower(name[s]) != tolower(name[e])) {
+            return false;
+        } else {
+            s++;
+            e--;
+        }
     }
+    return true;
 }
 
 int getLength(char name[]) {
@@ -26,7 +32,7 @@ int main() {
     int ans = getLength(name);
     
     reverseString(name, ans);
-    
-    cout << name;
+
+    cout << checkPalindrome(name, ans);;
     return 0;
 }
