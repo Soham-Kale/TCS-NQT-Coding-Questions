@@ -1,0 +1,12 @@
+✅ **Question 1: Student Marks Calculation (2D Array)**
+
+📄 **Problem Statement**
+
+You are given the marks of students in two exams: **Internal** and **External**.
+
+• Marks are stored in two separate **2D matrices** of size R × C.
+• Each element represents marks of a student.
+• You are given an index (i, j) (0-based indexing).
+
+👉 **Task:**
+Calculate the **total marks** of the student at position (i, j).
