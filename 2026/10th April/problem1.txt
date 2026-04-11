@@ -10,3 +10,17 @@ You are given the marks of students in two exams: **Internal** and **External**.
 
 👉 **Task:**
 Calculate the **total marks** of the student at position (i, j).
+
+
+🔍 Example
+
+Input:
+2 2
+10 20
+30 40
+15 25
+35 45
+1 1
+
+Output:
+85
