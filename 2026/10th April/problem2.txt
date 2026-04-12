@@ -1,0 +1,29 @@
+### ✅ **Question 2: Group Formation with Minimum Efficiency Difference**
+
+📄 **Problem Statement**
+
+You are given an array representing the **efficiency of N persons**.
+
+
+### 📌 **You need to:**
+
+* Form groups of size **T**
+* Each group must contain exactly **T members**
+* Groups should be formed such that **difference within a group is minimized**
+* Remaining persons (if any) are ignored
+
+
+👉 **Final Task:**
+Among all groups, find the **maximum difference** between:
+
+* **Lowest efficiency**
+* **Highest efficiency**
+
+
+i/p:
+7
+3
+1 6 9 5 2 12 13           // 1 2 5 6 9 12 13  (after sort)
+
+o/p:
+6
