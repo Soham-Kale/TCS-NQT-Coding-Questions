@@ -1,0 +1,19 @@
+**Question: Minimum Cost to Connect Servers**
+
+**Problem Statement**
+
+You are given:
+
+* N → number of servers
+* An array installCost[] → cost to install each server
+* A 2D matrix connectCost[][] → cost to connect any two servers
+
+Your task is to:
+
+* Connect all servers such that the **total cost is minimized**
+
+**Cost includes:**
+
+1. Cost to install servers
+
+---

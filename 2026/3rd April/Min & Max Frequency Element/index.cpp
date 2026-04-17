@@ -16,13 +16,15 @@ int main() {
 
     for(auto it: freq) { 
         if(it.second < minFreq) { 
-            minFreq = it.second; minElement = it.first; 
+            minFreq = it.second; 
+            minElement = it.first; 
         } 
     } 
 
     for(auto it: freq) {
         if(it.second > maxFreq) {
-            maxFreq = it.second; maxElement = it.first; 
+            maxFreq = it.second; 
+            maxElement = it.first; 
         }
     }
     

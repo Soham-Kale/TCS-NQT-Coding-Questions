@@ -1,0 +1,30 @@
+**Problem Statement**
+
+You are given an array of integers representing **Product IDs**.
+
+Your task is to:
+* Find the product ID that appears **most frequently** in the array.
+* If multiple product IDs have the **same highest frequency**, return the **smallest product ID** among them.
+
+**Input Format**
+
+* Integer N → number of elements in the array
+* Array of N integers → product IDs
+
+Here’s the extracted text:
+
+---
+
+**Output Format**
+
+* Print a single integer → product ID with the highest frequency
+* If tie, print the **smallest product ID**
+
+
+**Example**
+**Input**
+7
+1 2 2 3 3 4 1
+
+**Output**
+1
