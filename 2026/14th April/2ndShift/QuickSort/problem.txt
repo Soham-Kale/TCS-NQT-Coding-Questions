@@ -1,0 +1,15 @@
+**Problem Statement**
+
+You are given an array of integers.
+
+Your task is to:
+
+1. Sort the array using **Quick Sort algorithm**
+2. Always choose the **last element as the pivot**
+3. During each partition step, **print the index of the pivot after placing it in its correct position**
+4. Finally, print the **sorted array**
+
+**Input Format**
+
+* Integer N → number of elements
+* Array of N integers

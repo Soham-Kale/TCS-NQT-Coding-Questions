@@ -2,6 +2,9 @@
 
 **Problem Statement**
 
+Here’s the extracted text:
+
+
 You are given:
 
 * N → number of servers
@@ -15,5 +18,19 @@ Your task is to:
 **Cost includes:**
 
 1. Cost to install servers
+2. Cost to connect servers
 
----
+
+You may choose:
+
+* To install servers individually or
+* Connect servers in a way that minimizes overall cost
+
+**Input Format**
+
+* Integer N → number of servers
+* Array of size N → installation cost of each server
+* N × N matrix → connection cost between servers
+
+**Output Format**
+* Print a single integer → **minimum total cost**
