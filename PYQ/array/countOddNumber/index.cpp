@@ -4,7 +4,7 @@ using namespace std;
 char countFreq(char arr[], int n) {
     // declare
     unordered_map<char, int>freq;      // key value
-    char ans;
+    char ans = '\0';     // for checking all even condition
     
     // store
     for(int i=0; i<n; i++) {
@@ -30,7 +30,13 @@ int main() {
         cin >> arr[i];
     }
     
-    cout << countFreq(arr, n);
+    char ans = countFreq(arr, n);
     
+    if(ans == '\0') {
+        cout << "All are even" << endl;
+    }
+    else {
+        cout << ans << endl;
+    }
     return 0;
 }
