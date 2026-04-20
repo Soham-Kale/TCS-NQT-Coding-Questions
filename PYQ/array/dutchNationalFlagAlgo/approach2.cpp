@@ -8,7 +8,7 @@ void sortArray(int arr[], int n) {
     int two = 0;
     
     for(int i=0; i<n; i++) {
-        // count number of zero
+        // count number of zeros, ones and twos
         if(arr[i] == 0) {
             zero++;
         } else if(arr[i] == 1) {
