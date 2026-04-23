@@ -1,0 +1,11 @@
+**2.**
+You are given three integers **p, q, and r**.
+
+Your task is to perform operations to make all three numbers equal. In one operation, you can:
+
+* Add 1 to any two of the numbers.
+* Subtract 1 from the third number.
+
+You need to determine and print the minimum number of operations required to make **p, q, and r** equal.
+
+If it is not possible to make all three numbers equal, print **-1**.
