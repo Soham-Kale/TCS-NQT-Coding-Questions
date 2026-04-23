@@ -1,0 +1,7 @@
+Q1: You are given an array contains one single element and all others comes 2 times.
+
+Eg:
+N = 5  
+Arr = [1, 1, 2, 2, 3]
+
+Op = 3
