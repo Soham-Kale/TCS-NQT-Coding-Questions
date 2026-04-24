@@ -1,0 +1,15 @@
+Q2. Given a weighted graph with n vertices and m edges, find the shortest distance 
+between two specified vertices. Print the shortest path and the total distance.
+
+Input Format:
+The first line contains two integers n (number of vertices) and m (number of edges).
+
+The next m lines contain three integers u, v, and w — representing an edge from 
+vertex u to vertex v with weight w.
+
+The last line contains two integers src and dest, representing the source and destination vertices.
+
+Output Format:
+Print the shortest path as a sequence of vertices.
+
+Print the total distance.
