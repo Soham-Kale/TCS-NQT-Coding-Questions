@@ -1,0 +1,40 @@
+**Question:**
+
+Write a program to manage expenses from a given total income.
+
+**Input:**
+
+1. Total Income: Integer value representing the total money.
+2. For each expense, take the following inputs repeatedly until the user enters **"done"**:
+
+   * Category: String representing the type of expense (e.g., "food", "shopping").
+   * Expense: Integer value for the amount spent.
+
+**Output:**
+
+1. Print the Total Income.
+2. Print the Total Expenses (sum of all expenses).
+3. Print the Total Savings (Total Income - Total Expenses).
+4. Print the breakdown of expenses for each category.
+
+
+**Example:**
+
+**Input:**
+Total Income: 1000
+Category: food
+Expense: 200
+Category: shopping
+Expense: 300
+Category: bill
+Expense: 50
+(done)
+
+**Output:**
+Total Income: 1000
+Total Expenses: 550
+Total Savings: 450
+Category:
+food: 200
+shopping: 300
+bill: 50
