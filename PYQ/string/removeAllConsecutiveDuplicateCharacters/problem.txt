@@ -1,0 +1,7 @@
+
+Write a program that reads a string input from the user and removes all consecutive 
+duplicate characters while maintaining the original order of distinct characters. 
+The program should then output the modified string.
+
+Input: 223334566777
+Output: 234567
