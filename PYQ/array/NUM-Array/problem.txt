@@ -1,0 +1,30 @@
+Understanding the Problem Statement
+
+Inputs:
+
+N: Length of the NUM array.
+X: Lower bound of the valid range.
+Y: Upper bound of the valid range.
+NUM: Array of numbers.
+
+Operations:
+
+Form pairs (NUM[i], NUM[j]).
+Concatenate them (like 5 and 5 becomes 55).
+Check if X ≤ Concatenated Number ≤ Y.
+Count how many such valid pairs exist.
+
+Example:
+
+N = 4
+NUM = [5, 15, 1, 9]
+X = 10
+Y = 99
+
+Pairs & Concatenations:
+
+(5,5) → 55 ✅ (Valid: 10 ≤ 55 ≤ 99)
+(5,15) → 515 ❌ (Out of range)
+(5,1) → 51 ✅ (Valid: 10 ≤ 51 ≤ 99)
+(5,9) → 59 ✅ (Valid: 10 ≤ 59 ≤ 99)
+(15,5) → 155 ❌ (Out of range)
