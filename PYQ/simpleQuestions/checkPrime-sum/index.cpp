@@ -15,13 +15,11 @@ int main() {
     cin >> n >> m;
 
     int sum = 0;
-
     for(int i = n; i <= m; i++) {
         if(isPrime(i)) {
             sum += i;
         }
     }
-
     cout << sum;
     return 0;
 }

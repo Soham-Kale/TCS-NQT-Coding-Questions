@@ -35,10 +35,9 @@ int main() {
     while(t--){
         int p, q, r;
         cin >> p >> q >> r;
-
+        
         int ans = minOperations(p, q, r);
         cout << ans << endl;
     }
-
     return 0;
 }
