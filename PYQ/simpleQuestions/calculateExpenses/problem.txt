@@ -17,7 +17,6 @@ Write a program to manage expenses from a given total income.
 3. Print the Total Savings (Total Income - Total Expenses).
 4. Print the breakdown of expenses for each category.
 
-
 **Example:**
 
 **Input:**

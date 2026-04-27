@@ -37,6 +37,5 @@ int main() {
     for (auto &it : categoryMap) {
         cout << it.first << ": " << it.second << endl;
     }
-
     return 0;
 }
