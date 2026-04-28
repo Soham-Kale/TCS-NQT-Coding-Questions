@@ -6,7 +6,9 @@ are offered by travelers, calculate how many Monkeys remain on the Tree after so
 At a time one Monkey gets down and finishes eating and go to the other side of the road. 
 The Monkey who climbed down does not climb up again after eating until the other Monkeys finish eating.
 
-Monkey can either eat k Bananas or j Peanuts. If for last Monkey there are less than k Bananas left on the ground or less than j Peanuts left on the ground, only that Monkey can eat Bananas (<k) along with the Peanuts (<j).
+Monkey can either eat k Bananas or j Peanuts. If for last Monkey there are less than k Bananas left on the 
+ground or less than j Peanuts left on the ground, only that Monkey can eat Bananas (<k) 
+along with the Peanuts (<j).
 
 Write code to take inputs as n, m, p, k, j and return the number of Monkeys left on the Tree.
 
