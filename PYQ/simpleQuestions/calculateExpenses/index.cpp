@@ -1,41 +1,47 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int totalIncome;
-    cin >> totalIncome;
+    int income;
+    cin >> income;
 
     string category;
     int expense;
+    
+    int totalExpenditure = 0;
+    
+    unordered_map<string, int> mp;
+    vector<string> order; // store input order
 
-    int totalExpenses = 0;
-
-    // for storing expenses by category    
-    unordered_map<string, int> categoryMap;
-
-    while (true) {
+    while(true) {
         cin >> category;
-
-        if (category == "done") {
+        
+        if(category == "done") {
             break;
         }
-
+        
         cin >> expense;
+        
+        totalExpenditure += expense;
 
-        totalExpenses += expense;
-        categoryMap[category] += expense;
+        // if category appears first time
+        if(mp.find(category) == mp.end()) {
+            order.push_back(category);
+        }
+
+        mp[category] += expense;
     }
-
-    int savings = totalIncome - totalExpenses;
-
-    // Output
-    cout << "Total Income: " << totalIncome << endl;
-    cout << "Total Expenses: " << totalExpenses << endl;
+    
+    int savings = income - totalExpenditure;
+    
+    cout << "Total Income: " << income << endl;
+    cout << "Total Expenses: " << totalExpenditure << endl;
     cout << "Total Savings: " << savings << endl;
 
     cout << "Category:" << endl;
-    for (auto &it : categoryMap) {
-        cout << it.first << ": " << it.second << endl;
+
+    // print in input order
+    for(string cat : order) {
+        cout << cat << ": " << mp[cat] << endl;
     }
-    return 0;
 }
