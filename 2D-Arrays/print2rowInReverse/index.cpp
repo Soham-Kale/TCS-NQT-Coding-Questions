@@ -17,11 +17,14 @@ int main() {
     // print alternate reverse row
     for(int i=0; i<row; i++) {
         
+        // if row is even, print left to right, else print right to left
         if(i % 2 == 0) {
+            // print left to right
             for(int j=0; j<col; j++) {
                 cout << arr[i][j] << " ";
             }
         } else {
+            // print right to left
             for(int j=col-1; j>=0; j--) {
                 cout << arr[i][j] << " ";
             }
