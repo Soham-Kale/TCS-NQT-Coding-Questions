@@ -6,15 +6,18 @@ int coutValues(vector<int>&s) {
     int m = s.size();
     
     for(int i=1; i<m; i++) {
+        // check if the previous element is greater than the current element
         if(s[i-1] > s[i]) {
             count++;
         }
     }
     
+    // check if the last element is greater than the first element
     if(s[m-1] > s[0]) {
         count++;
     }
     
+    // if the count is less than or equal to 1, then the array is sorted and rotated
     return count<=1;
 }
 
