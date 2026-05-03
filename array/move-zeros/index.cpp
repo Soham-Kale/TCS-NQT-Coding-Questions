@@ -2,8 +2,10 @@
 using namespace std;
 
 void moveZeros(  vector<int> &s) {
+    // i will point to the position where we want to place the next non-zero element
     int i = 0;
     for(int j=0; j<s.size(); j++) {
+        // if current element is non-zero, swap it with the element at index i and increment i
         if(s[j] != 0) {
             swap(s[j], s[i]);
             i++;

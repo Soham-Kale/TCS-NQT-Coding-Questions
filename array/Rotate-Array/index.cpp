@@ -3,11 +3,13 @@ using namespace std;
 
 void rotateArray(vector<int> &s, int k) {
     int n = s.size();
+    // If k is greater than n, we can rotate the array k % n times instead of k times
     k = k % n;  // handle k > n
     
     vector<int> temp(n);
     
     for(int i = 0; i < n; i++) {
+        // Calculate the new position for each element and place it in the temp array
         temp[(i + k) % n] = s[i];
     }
     
