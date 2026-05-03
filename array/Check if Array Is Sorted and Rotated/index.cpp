@@ -32,7 +32,9 @@ int main() {
     }
     
     int ans = coutValues(s);
-    cout << ans;
+    
+    // print true if the array is sorted and rotated, otherwise print false
+    cout << (ans ? "true" : "false");
     
     return 0;
 }
