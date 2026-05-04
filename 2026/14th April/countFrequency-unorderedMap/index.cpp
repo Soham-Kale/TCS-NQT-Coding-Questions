@@ -1,39 +1,33 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
     int n;
     cin >> n;
-    
-    int arr[n];
-    
-    for(int i=0; i<n; i++) {
-        cin >> arr[i];
-    }
-    
+
+    vector<int> arr(n);          // stores order
     unordered_map<int, int> freq;
-    
-    // count frequency of each product ID's
-    for(int i=0; i<n; i++) {
+
+    // input + frequency
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i];
         freq[arr[i]]++;
     }
-    
+
+    // find max frequency
     int maxFreq = 0;
-    int result = 0;
-    
-    for(auto & it: freq) {
-        int id = it.first;
-        int count = it.second;
-        
-        if(count > maxFreq) {
-            maxFreq = count;
-            result = id;
-        } 
-        else if(count == maxFreq && id < result) {
-            id = result;
-        }
-        cout << count;
+    for(auto &it : freq) {
+        maxFreq = max(maxFreq, it.second);
     }
-    
+
+    // find smallest ID with max frequency
+    int ans = INT_MAX;
+    for(int i = 0; i < n; i++) {
+        if(freq[arr[i]] == maxFreq) {
+            ans = min(ans, arr[i]);
+        }
+    }
+
+    cout << ans;
     return 0;
 }
