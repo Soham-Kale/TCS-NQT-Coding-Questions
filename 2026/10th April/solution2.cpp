@@ -18,11 +18,12 @@ int main() {
     
     // form groups of size T
     for(int i=0; i+T-1 < N; i+=T) {
+        // calculate difference between last and first element of the group
         int diff = arr[ i + T - 1] - arr[i];
+        // update max difference
         maxDiff = max(maxDiff, diff);
     }
     
     cout << maxDiff;
-    
     return 0;
 }
